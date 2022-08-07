@@ -1,0 +1,33 @@
+name: 'HaxExtend'
+
+on:
+  #push:
+  schedule:
+    # run every 2 days on UTC 1/2/3am (9/10/11am CN time)
+     - cron: '46 1,4,7,10,13,16,19,21,0 */1 * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-2022
+     # runs-on: macos-latest
+    steps:
+        - name: 'Checkout codes'
+          uses: actions/checkout@v2
+          with:
+            python-version: '3.9.5'
+#         - name: 'Set up Python'
+#           uses: actions/setup-python@v2
+#           with:
+#             python-version: '3.9.10'
+        - name: 'Install requirements'
+          run: |
+            pip3 install -r ./requirements.txt
+        - name: 'Working'
+          env:
+            USERNAME: ${{ secrets.USERNAME }}
+            PASSWORD: ${{ secrets.PASSWORD }}
+            BARKKEY: ${{ secrets.BARKKEY }}
+          run: |
+            python3 ./main.py
