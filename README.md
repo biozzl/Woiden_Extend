@@ -1,4 +1,4 @@
-## HaxExtend with Github Action
+## WoidenExtend with Github Action
 
 
 原脚本有些小问题，在此做如下更新修复：
@@ -11,9 +11,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### 感谢原作者！！
-
-#### 计划
-- Helium 版本研究中
 
 #### Secret 增加以下变量
 - ```USERNAME```
