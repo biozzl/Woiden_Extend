@@ -19,8 +19,8 @@ from selenium.webdriver.support import expected_conditions as EC
 audioToTextDelay = 10
 delayTime = 2
 audioFile = "\\payload.mp3"
-urlLogin = 'https://hax.co.id/login'
-urlExtendRenew = 'https://hax.co.id/vps-renew/'
+urlLogin = 'https://woiden.id/login'
+urlExtendRenew = 'https://woiden.id/vps-renew/'
 SpeechToTextURL = 'https://speech-to-text-demo.ng.bluemix.net/'
 
 # secret
