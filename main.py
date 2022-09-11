@@ -206,7 +206,7 @@ def init():
         # options.add_argument('--disable-dev-shm-usage')
 
         # driver = webdriver.Chrome(executable_path=diffPlatformDriverPath(), options=Options)
-        driver_chrome = uc.Chrome(version_main=103, options=options)
+        driver_chrome = uc.Chrome(options=options)
         # driver = uc.Chrome()
         delay()
         # go to website which have recaptcha protection
