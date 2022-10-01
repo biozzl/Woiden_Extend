@@ -142,7 +142,7 @@ def barkPush(body):
     if barkKey == 1:
         # bark push
         barkUrl = 'https://api.day.app/' + BARKKEY
-        title = 'HaxExtend'
+        title = 'WoidenExtend'
         requests.get(url=f'{barkUrl}/{title}/{body}?isArchive=1')
         print('bark push Done! Body:', body)
     elif barkKey == 0:
